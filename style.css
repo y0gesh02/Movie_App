@@ -8,7 +8,7 @@ body {
 
 .navbar {
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: black;
   position: sticky;
   top: 0;
@@ -17,14 +17,22 @@ body {
 .navbar-container {
   display: flex;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 60px;
   height: 100%;
-  color: white;
+  
+  
   font-family: "Sen", sans-serif;
+}
+.navbar-container a{
+  /* padding-top: 10px; */
+  text-decoration: none;
+  color: rgb(243, 239, 239); 
+  list-style: none;
+  /* padding: 5px; */
 }
 
 .logo-container {
-  flex: 1;
+  flex: 2;
 }
 
 .logo {
@@ -32,20 +40,35 @@ body {
   color: #4dbf00;
 }
 
+
 .menu-container {
+  
   flex: 6;
+ 
+}
+.menu-container ul a:hover {
+ 
+  color:  rgb(255, 0, 0);
+   
 }
 
 .menu-list {
-  display: flex;
-  list-style: none;
+  
+   display: flex;
+  list-style: none; 
+  /* padding: 4px 32px; */
+  font-size: 1.3rem;
+  
+  cursor: pointer;
+  
 }
 
 .menu-list-item {
-  margin-right: 30px;
+  margin-right: 66px;
 }
 
 .menu-list-item.active {
+ /* color: aliceblue; */
   font-weight: bold;
 }
 .profile-container {
@@ -53,17 +76,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .profile-text-container {
   margin: 0 20px;
 }
 
-.profile-picture {
+.profile-picture  {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
+ 
 }
 
 .toggle {
@@ -102,6 +127,16 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  cursor: pointer;
+ 
+}
+.sidebar a:hover{
+  color: rgb(255, 0, 0);
+}
+.sidebar a{
+  
+  
+  text-decoration: none;
 }
 
 .left-menu-icon {
@@ -111,18 +146,23 @@ body {
 }
 
 .container {
-  background-color: #151515;
-  min-height: calc(100vh - 50px);
+  /* background-color: #1dac88; */
+  /* min-height: calc(100vh px); */
   color: white;
+   padding-top: 90px; 
+  
 }
 
 .content-container {
+  margin-top: 0px;
   margin-left: 50px;
+  
 }
 
 .featured-content {
   height: 50vh;
-  padding: 50px;
+  padding-top: 0px;
+  padding: 50px 50px;
 }
 
 .featured-title {
@@ -131,8 +171,8 @@ body {
 
 .featured-desc {
   width: 500px;
-  color: lightgray;
-  margin: 30px 0;
+  color: rgb(192, 12, 12);
+  /* margin: 0px 0; */
 }
 
 .featured-button {
@@ -143,6 +183,7 @@ body {
   border: none;
   outline: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .movie-list-container {
